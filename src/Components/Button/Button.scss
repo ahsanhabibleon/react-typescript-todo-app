@@ -1,0 +1,26 @@
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 3px;
+    transition: all .3s;
+
+    &:hover {
+        background-color: #d617cc;
+    }
+
+    &.danger {
+        background-color: rgb(205, 77, 77);
+    }
+
+    &.btn-small {
+        padding: 1px 6px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

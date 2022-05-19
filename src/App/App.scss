@@ -1,0 +1,87 @@
+.todo-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input {
+
+    &[type="text"],
+    &[type="number"],
+    &[type="search"],
+    &[type="email"],
+    &[type="password"] {
+        border: 1px solid #ccc;
+        width: 100%;
+        line-height: 26px;
+        border-radius: 3px;
+        padding: 0 10px;
+    }
+}
+
+textarea,
+select {
+    border: 1px solid #ccc;
+    width: 100%;
+    line-height: 26px;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+
+select {
+    width: auto;
+    padding: 6px 10px;
+    height: 30px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.todo-list {
+    border-top: 1px solid #eee;
+}
+
+.todo {
+    display: flex;
+    // align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    font-size: 14px;
+
+    &.completed {
+        span {
+            text-decoration: line-through;
+        }
+
+        input {
+            pointer-events: none;
+            opacity: .5;
+        }
+    }
+}
+
+.action-btn-group {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+        cursor: pointer;
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .2;
+}
+
+.todo-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
